@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "56d906a2-1b27-4efd-875f-6a65ec6b98bf",
+		"name": "Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41967339"
+	},
+	"item": [
+		{
+			"name": "SALVAR USUÁRIO",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9b9b5cde36aa3b2f72b0dfe19412f1bdd37b18f06b2539bc875d08525e0b82b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "hhhh",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ffff",
+							"type": "text"
+						},
+						{
+							"key": "pass",
+							"value": "eee",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/index.php/usuario_add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"index.php",
+						"usuario_add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDITAR USUÁRIO",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9b9b5cde36aa3b2f72b0dfe19412f1bdd37b18f06b2539bc875d08525e0b82b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Luciano R",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "lrodirguez",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "luciano@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "pass",
+							"value": "testetetetet",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/index.php/usuario_edit/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"index.php",
+						"usuario_edit",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTA USUÁRIOS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9b9b5cde36aa3b2f72b0dfe19412f1bdd37b18f06b2539bc875d08525e0b82b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8001/index.php/usuario_get_all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"index.php",
+						"usuario_get_all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTA UM USUÁRIO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9b9b5cde36aa3b2f72b0dfe19412f1bdd37b18f06b2539bc875d08525e0b82b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8001/index.php/usuario_get/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"index.php",
+						"usuario_get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE UM USUÁRIO",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9b9b5cde36aa3b2f72b0dfe19412f1bdd37b18f06b2539bc875d08525e0b82b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8001/index.php/usuario_delete/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"index.php",
+						"usuario_delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
